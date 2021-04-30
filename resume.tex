@@ -1,0 +1,176 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    %   \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% ----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Nishant Garg} \\ \vspace{1pt}
+    \small \href{tel:12499990499}{\underline{+1(249)9990499}} $|$
+    \href{mailto:gargn4@mcmaster.ca}{\underline{gargn4@mcmaster.ca}} $|$ 
+    \href{https://www.linkedin.com/in/gargn4}{\underline{linkedin.com/in/gargn4}} $|$
+    \href{https://github.com/nishx09}{\underline{github.com/nishx09}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{McMaster University} $|$ \small Honours Computer Science (Co-op) (Bachelor of Applied Science) }{\textit{\small Sep. 2019 -- May 2024}}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{CGPA: 4.0/4.0} $|$ Provost's Honour Roll $|$ Dean's Honour List $|$ recieved Edwin Marwin Dalley Mem Scholarship}
+        \resumeItem{Relevant courses: data structure, algorithms, discrete mathematics, software development, web development}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small \item \textbf{Languages}{: \small  C, C++, Java, Python, Bash, HTML, CSS, SQL, JQuery, JavaScript, Haskell} \\
+    \vspace{0.0001cm}
+    \small \item \textbf{Frameworks}{: Django, Bootstrap} \\
+    \vspace{0.0001cm}
+    \small \item \textbf{Developer Tools}{: Git, Github, Gitlab, VS Code, Atom, PyCharm, IntelliJ, Eclipse, Unix Shell, Vim, \LaTeX} \\
+    
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{McMaster University} $|$ \small Undergraduate Teaching Assistant \textbf{(CS1MD3)}}{\textit{\small Sep. 2020 -- Dec. 2020}}
+      \resumeItemListStart
+        \resumeItem{Supported instructor with test administration, curriculum development and assignment grading.}
+        \resumeItem{Supported student learning objectives through personalized and small group assistance.}
+        \resumeItem{Eliminated learning gaps and effectively instructed students on their programming skills using wide variety of teaching aids and motivational strategies.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{NewsDistributor} $|$ \small{Java, PHP, MySQL}}{\small \textit{Sep 2018 -- Nov. 2018}}
+          \resumeItemListStart
+            \resumeItem{Developed an user interactive web application using java, php and mySQL}
+            \resumeItem{Which allows the newspaper distributor to maintain the record of their customers and calculate the money due from different customers based on the newspaper they get.}
+            \resumeItem{It also automatically sends the customers a mail regarding the amount due from the distributor.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{BloodLine} $|$ \small{HTML, CSS, Bootstrap, Javascript, MySQL}}{\small \textit{Dec. 2018 -- Feb. 2019}}
+          \resumeItemListStart
+            \resumeItem{Developed an user interactive web page using HTML, CSS, Javascript and mySQL.}
+            \resumeItem{Which allows the donors to locate the blood banks near them which is in need of their blood group and other way around if a person is in need of a particular blood group, it helps them to locate the blood bank with the required group.}
+            \resumeItem{It also allows the user to contact their source through the very same web page.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Ponder} $|$ \small{React Native, Javascript, SQLite, Git}}{\small \textit{Hack Western VII $|$ Nov. 2020}}
+          \resumeItemListStart
+            \resumeItem{Ponder is an app which allows the user to write journal entries about whatever they're grateful for.}
+            \resumeItem{We built the frontend using React Native, using Expo CLI and backend using SQLite.}
+            \resumeItem{We built this app to inspire the user be optimistic in the most stressful times and to help keep them on track and focused.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%------------EXTRA-CURRICULAR-------------
+\section{Extra Curricular}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{McMaster Intramural League}}{\small \textit{Jan. 2020 -- March 2020}}
+      \resumeItemListStart
+        \resumeItem{Participated in the cricket intramural.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Developer Student Club McMaster University}}{\small \textit{Sep. 2020 -- Present}}
+      \resumeItemListStart
+        \resumeItem{Volunteered as a team member of the DSC external relations club.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
